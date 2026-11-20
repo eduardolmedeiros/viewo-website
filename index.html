@@ -10,7 +10,9 @@
   <meta property="og:title" content="Viewo — Live TV, your way" />
   <meta property="og:description" content="A native IPTV player for iPhone and iPad. Bring your own playlist." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/img/app-icon.png" />
+  <meta property="og:image" content="assets/img/screens/og-hero.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="800" />
 
   <link rel="icon" type="image/png" href="assets/img/app-icon.png" />
   <link rel="apple-touch-icon" href="assets/img/app-icon.png" />
@@ -27,6 +29,7 @@
       </a>
 
       <nav class="nav__links" aria-label="Primary">
+        <a href="#tour">Tour</a>
         <a href="#features">Features</a>
         <a href="#your-source">Your Source</a>
         <a href="#privacy">Privacy</a>
@@ -57,22 +60,169 @@
         </div>
 
         <div class="hero__device" data-reveal>
-          <div class="phone" aria-hidden="true">
-            <div class="phone__screen">
-              <div class="phone__island"></div>
-              <div class="phone__content">
-                <img class="phone__icon" src="assets/img/app-icon.png" alt="" />
-                <span class="phone__app">Viewo</span>
-                <span class="phone__tag">Live TV, your way</span>
-                <div class="phone__rows">
-                  <div class="phone__row"><i></i><span></span></div>
-                  <div class="phone__row"><i></i><span></span></div>
-                  <div class="phone__row"><i></i><span></span></div>
-                </div>
-              </div>
+          <picture>
+            <source srcset="assets/img/screens/hero-devices.avif" type="image/avif" />
+            <img
+              class="hero__art"
+              src="assets/img/screens/hero-devices.png"
+              alt="Viewo on iPad showing the program guide and on iPhone showing live playback"
+              width="1600"
+              height="1700"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="tour" id="tour">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">Take the tour</p>
+          <h2 class="section-title">Every screen, considered.</h2>
+          <p class="section-lede">A quick look at the library, live playback, the guide, and the little things that keep you watching.</p>
+        </header>
+
+        <div class="carousel" data-carousel data-reveal>
+          <div
+            class="carousel__viewport"
+            tabindex="0"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="Viewo app screenshots"
+          >
+            <ol class="carousel__track">
+              <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="1 of 6">
+                <figure class="tour-card">
+                  <div class="tour-card__media">
+                    <picture>
+                      <source srcset="assets/img/screens/tour-01-library.avif" type="image/avif" />
+                      <img src="assets/img/screens/tour-01-library.png" alt="Viewo library showing saved playlists" width="800" height="1550" loading="lazy" decoding="async" />
+                    </picture>
+                  </div>
+                  <figcaption class="tour-card__copy">
+                    <span class="tour-card__step">01</span>
+                    <h3>Your library</h3>
+                    <p>Every playlist in one calm, focused place.</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="2 of 6">
+                <figure class="tour-card">
+                  <div class="tour-card__media">
+                    <picture>
+                      <source srcset="assets/img/screens/tour-02-channels.avif" type="image/avif" />
+                      <img src="assets/img/screens/tour-02-channels.png" alt="Viewo channel search and category filters" width="800" height="1550" loading="lazy" decoding="async" />
+                    </picture>
+                  </div>
+                  <figcaption class="tour-card__copy">
+                    <span class="tour-card__step">02</span>
+                    <h3>Find any channel</h3>
+                    <p>Search, filter, and favorite without friction.</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="3 of 6">
+                <figure class="tour-card">
+                  <div class="tour-card__media">
+                    <picture>
+                      <source srcset="assets/img/screens/tour-03-player.avif" type="image/avif" />
+                      <img src="assets/img/screens/tour-03-player.png" alt="Viewo live player with playback controls" width="800" height="1550" loading="lazy" decoding="async" />
+                    </picture>
+                  </div>
+                  <figcaption class="tour-card__copy">
+                    <span class="tour-card__step">03</span>
+                    <h3>Watch live</h3>
+                    <p>A player that gets out of the way.</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="4 of 6">
+                <figure class="tour-card">
+                  <div class="tour-card__media">
+                    <picture>
+                      <source srcset="assets/img/screens/tour-04-guide.avif" type="image/avif" />
+                      <img src="assets/img/screens/tour-04-guide.png" alt="Viewo program guide timeline" width="800" height="1550" loading="lazy" decoding="async" />
+                    </picture>
+                  </div>
+                  <figcaption class="tour-card__copy">
+                    <span class="tour-card__step">04</span>
+                    <h3>Program guide</h3>
+                    <p>See what's on across every channel.</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="5 of 6">
+                <figure class="tour-card">
+                  <div class="tour-card__media">
+                    <picture>
+                      <source srcset="assets/img/screens/tour-05-favorites.avif" type="image/avif" />
+                      <img src="assets/img/screens/tour-05-favorites.png" alt="Viewo favorites list" width="800" height="1550" loading="lazy" decoding="async" />
+                    </picture>
+                  </div>
+                  <figcaption class="tour-card__copy">
+                    <span class="tour-card__step">05</span>
+                    <h3>Favorites</h3>
+                    <p>Your go-tos stay one tap away.</p>
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li class="carousel__slide" role="group" aria-roledescription="slide" aria-label="6 of 6">
+                <figure class="tour-card">
+                  <div class="tour-card__media">
+                    <picture>
+                      <source srcset="assets/img/screens/tour-06-recents.avif" type="image/avif" />
+                      <img src="assets/img/screens/tour-06-recents.png" alt="Viewo recently watched channels" width="800" height="1550" loading="lazy" decoding="async" />
+                    </picture>
+                  </div>
+                  <figcaption class="tour-card__copy">
+                    <span class="tour-card__step">06</span>
+                    <h3>Recents</h3>
+                    <p>Pick up right where you left off.</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </div>
+
+          <div class="carousel__controls">
+            <div class="carousel__dots" data-carousel-dots></div>
+            <div class="carousel__arrows">
+              <button class="carousel__button" type="button" data-carousel-prev aria-label="Previous screenshot">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <button class="carousel__button" type="button" data-carousel-next aria-label="Next screenshot">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+              </button>
             </div>
-            <div class="phone__side phone__side--left"></div>
-            <div class="phone__side phone__side--right"></div>
+          </div>
+          <p class="visually-hidden" data-carousel-status aria-live="polite">View 1 of 6</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ipad" id="ipad">
+      <div class="wrap">
+        <div class="ipad__panel" data-reveal>
+          <div class="ipad__copy">
+            <p class="eyebrow">iPad</p>
+            <h2 class="section-title">Big screen.<br />Same focus.</h2>
+            <p class="section-lede">The guide, library, and Multi-view all breathe on iPad, with a split layout that keeps browsing and playback side by side.</p>
+            <ul class="ipad__points">
+              <li>Full program guide with category filters</li>
+              <li>Up to four live channels in Multi-view</li>
+              <li>Picture in Picture and AirPlay support</li>
+            </ul>
+          </div>
+          <div class="ipad__media">
+            <picture>
+              <source srcset="assets/img/screens/ipad-guide.avif" type="image/avif" />
+              <img src="assets/img/screens/ipad-guide.png" alt="Viewo program guide on iPad" width="1200" height="1500" loading="lazy" decoding="async" />
+            </picture>
           </div>
         </div>
       </div>
