@@ -160,16 +160,11 @@ img {
 }
 
 .brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: 600;
-  font-size: 1.05rem;
-  letter-spacing: -0.01em;
+  flex: none;
 }
-.brand__mark {
-  border-radius: 7px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+.brand__logo {
+  width: auto;
+  height: 34px;
 }
 
 .nav__links {
@@ -603,15 +598,8 @@ img {
   flex-direction: column;
   gap: 20px;
 }
-.footer__brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-  font-weight: 600;
-  font-size: 0.95rem;
-}
-.footer__brand .brand__mark {
-  border-radius: 6px;
+.footer__brand .brand__logo {
+  height: 26px;
 }
 .footer__disclaimer {
   font-size: 0.82rem;
@@ -662,7 +650,23 @@ img {
   }
 }
 
+@media (min-width: 561px) and (max-width: 720px) {
+  .nav__inner {
+    gap: 12px;
+  }
+  .nav__links {
+    gap: 12px;
+  }
+  .nav__cta {
+    padding-inline: 12px;
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 560px) {
+  .brand .brand__logo {
+    height: 30px;
+  }
   .nav__links {
     display: none;
   }

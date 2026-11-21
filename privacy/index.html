@@ -17,8 +17,7 @@
   <header class="nav">
     <div class="nav__inner">
       <a class="brand" href="../" aria-label="Viewo home">
-        <img class="brand__mark" src="../assets/img/app-icon.png" alt="" width="28" height="28" />
-        <span class="brand__name">Viewo</span>
+        <img class="brand__logo" src="../assets/img/logo-dark-background.svg" alt="" width="585" height="153" />
       </a>
 
       <nav class="nav__links" aria-label="Legal">
@@ -69,8 +68,9 @@
 
     <h2>Network connections</h2>
     <p>
-      Viewo connects only to the playlist, guide, and stream URLs you configure, plus
-      Apple services used for iCloud sync when you enable it. Those servers may receive
+      Viewo connects to the sources you configure and may also load stream, guide, and
+      artwork URLs referenced by those sources. When you enable iCloud sync, Viewo also
+      connects to Apple's iCloud service. Those servers may receive
       your IP address, request headers, and the content you request, as with any media
       player. Their operators handle that data under their own privacy policies.
     </p>
@@ -81,10 +81,17 @@
 
     <h2>iCloud sync</h2>
     <p>
-      iCloud sync is optional and off unless you enable it. When enabled, playlist
-      metadata is stored in your private iCloud key-value store through Apple's iCloud
-      service. Imported playlist files remain on your device. The developer does not
+      iCloud sync is optional. When enabled, details of remote playlists, including
+      their full playlist and guide URLs and deletion records, are stored in your
+      private iCloud key-value store. Imported playlist files and their library entries
+      stay on the importing device. The developer does not
       receive or have access to your iCloud data.
+    </p>
+
+    <h2>Home Screen widgets</h2>
+    <p>
+      Favorites and Recents widgets share display information and channel identifiers
+      with Viewo using a local App Group. The app opens the channel from its local library.
     </p>
 
     <h2>Share extension</h2>
@@ -164,8 +171,7 @@
   <footer class="footer">
     <div class="wrap footer__inner">
       <div class="footer__brand">
-        <img class="brand__mark" src="../assets/img/app-icon.png" alt="" width="22" height="22" />
-        <span>Viewo</span>
+        <img class="brand__logo" src="../assets/img/logo-dark-background.svg" alt="Viewo" width="585" height="153" />
       </div>
       <p class="footer__disclaimer">
         Viewo is a client application only. It ships with no content, subscriptions, or
