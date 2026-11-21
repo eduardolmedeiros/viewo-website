@@ -1,0 +1,14 @@
+#EXTM3U url-tvg="epg.xml"
+#PLAYLIST:Demo Main
+#EXTINF:-1 tvg-id="aurora" tvg-name="Aurora" group-title="Entertainment",Aurora
+media/aurora.mp4?channel=aurora
+#EXTINF:-1 tvg-id="beacon" tvg-name="Beacon News" group-title="News",Beacon News
+media/aurora.mp4?channel=beacon
+#EXTINF:-1 tvg-id="cinema" tvg-name="Cinema House" group-title="Movies",Cinema House
+media/aurora.mp4?channel=cinema
+#EXTINF:-1 tvg-id="field" tvg-name="Field Club" group-title="Sports",Field Club
+media/aurora.mp4?channel=field
+#EXTINF:-1 tvg-id="orbit" tvg-name="Little Orbit" group-title="Kids",Little Orbit
+media/aurora.mp4?channel=orbit
+#EXTINF:-1 tvg-id="nightfall" tvg-name="Nightfall" group-title="Drama",Nightfall
+media/aurora.mp4?channel=nightfall
