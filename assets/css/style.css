@@ -14,7 +14,7 @@
   --cream: #f0ebd8;
   --text: #eef1f6;
   --text-dim: #a7b2c4;
-  --text-faint: #6f7d93;
+  --text-faint: #8b98ad;
 
   --border: rgba(255, 255, 255, 0.08);
   --border-strong: rgba(255, 255, 255, 0.14);
@@ -244,6 +244,12 @@ img {
   flex-wrap: wrap;
   gap: 14px;
   margin-top: 36px;
+}
+
+.hero__note {
+  margin-top: 18px;
+  font-size: 0.85rem;
+  color: var(--text-faint);
 }
 
 .btn {
@@ -561,6 +567,14 @@ img {
   transform: translateY(-2px);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
 }
+.store-badge[aria-disabled="true"] {
+  opacity: 0.7;
+  cursor: default;
+}
+.store-badge[aria-disabled="true"]:hover {
+  transform: none;
+  box-shadow: none;
+}
 .store-badge svg {
   width: 26px;
   height: 26px;
@@ -667,8 +681,24 @@ img {
   .brand .brand__logo {
     height: 30px;
   }
+  .nav__inner {
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
   .nav__links {
-    display: none;
+    order: 3;
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    gap: 18px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .nav__links a {
+    font-size: 0.85rem;
+  }
+  .nav__cta {
+    margin-left: auto;
   }
   .grid {
     grid-template-columns: 1fr;
